@@ -1,0 +1,10 @@
+Django==1.4
+dj-database-url==0.2.1
+gunicorn==0.14.6
+psycopg2==2.4.5
+wsgiref==0.1.2
+distribute==0.6.27
+django-heroku-postgresify==0.2
+django-decorators==0.1.0
+PIL==1.1.7
+python-dateutil==1.5

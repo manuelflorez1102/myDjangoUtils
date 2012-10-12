@@ -1,0 +1,16 @@
+# Create your views here.
+from django.shortcuts import get_object_or_404, render_to_response
+from django.http import HttpResponseRedirect, HttpResponse
+from django.core.urlresolvers import reverse
+from django.template import RequestContext, Context, loader
+
+def index(request):
+    return HttpResponse("Hello books!!!!!")
+           
+
+def show_color(request):
+    if "favorite_color" in request.COOKIES:
+        return HttpResponse("Your favorite color is %s" % \
+            request.COOKIES["favorite_color"])
+    else:
+        return HttpResponse("You don't have a favorite color.")
